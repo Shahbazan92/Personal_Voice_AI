@@ -1,0 +1,16 @@
+[theme]
+primaryColor = "#6d5dfc"
+# No "base" set: Streamlit follows the visitor's system light/dark preference,
+# and users can switch under  ⋮ → Settings → Theme.
+
+[server]
+maxUploadSize = 50
+headless = true
+enableXsrfProtection = true
+runOnSave = false
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"

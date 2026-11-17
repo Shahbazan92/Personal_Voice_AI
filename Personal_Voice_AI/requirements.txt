@@ -1,0 +1,17 @@
+# ---------------------------------------------------------------------------
+# Lightweight UI/app dependencies. This is the file Streamlit Community Cloud
+# installs. It does NOT include PyTorch / Coqui TTS (see requirements-xtts.txt),
+# because XTTS-v2 normally exceeds Community Cloud memory limits. On Cloud the
+# app uses the Remote GPU engine; locally you also install requirements-xtts.txt.
+# NOTE: version ranges below could not be install-tested by the author (no network
+# in the build sandbox). If pip reports a conflict, see README → Troubleshooting.
+# ---------------------------------------------------------------------------
+streamlit>=1.40,<2
+numpy>=1.24,<3
+scipy>=1.10,<2
+soundfile>=0.12.1,<0.14
+librosa>=0.10.2,<0.12
+noisereduce>=3.0,<4
+imageio-ffmpeg>=0.5.1,<1
+requests>=2.31,<3
+psutil>=5.9,<8

@@ -1,0 +1,5 @@
+# GPU inference server. Install PyTorch with CUDA FIRST (see README, section "Remote GPU server").
+-r ../requirements-xtts.txt
+fastapi>=0.110,<1
+uvicorn[standard]>=0.29,<1
+python-multipart>=0.0.9

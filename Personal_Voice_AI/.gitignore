@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# Secrets
+.streamlit/secrets.toml
+.env
+
+# Private user data — NEVER commit voice recordings or generated audio
+profiles/*
+!profiles/.gitkeep
+outputs/*
+!outputs/generated/
+outputs/generated/*
+!outputs/generated/.gitkeep
+data/*
+!data/.gitkeep
+*.db
+*.sqlite3
+languages.json
+
+# Large model files (downloaded at runtime)
+models/*
+!models/.gitkeep
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+.cache/
+tts/
+
+# Audio anywhere in the repo (keep the repo free of personal recordings)
+*.wav
+*.mp3
+*.m4a
+*.flac
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
