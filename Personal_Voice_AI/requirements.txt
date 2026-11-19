@@ -15,3 +15,6 @@ noisereduce>=3.0,<4
 imageio-ffmpeg>=0.5.1,<1
 requests>=2.31,<3
 psutil>=5.9,<8
+torch==2.9.0
+torchaudio==2.9.0
+coqui-tts==0.27.4
