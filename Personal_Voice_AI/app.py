@@ -29,14 +29,14 @@ def main() -> None:
     services = get_services()
     settings = load_settings()
 
-      st.divider()
+    # XTTS-v2 temporary test section
+    st.divider()
     st.subheader("XTTS-v2 Test")
 
     if st.button("Test XTTS Voice Generation"):
         try:
             with st.spinner("Generating speech..."):
-                # Replace this with your actual service/model call
-                st.info("XTTS test button is working. Model integration is next.")
+                st.info("Test button is working!")
 
         except Exception as e:
             st.error(f"Generation failed: {e}")
@@ -45,8 +45,10 @@ def main() -> None:
         logo = config.BASE_DIR / "assets" / "logo.png"
         if logo.is_file():
             st.image(str(logo), width=72)
+
         st.markdown(f"### {config.APP_NAME}")
-        st.radio("Navigation", list(PAGES), key="nav", label_visibility="collapsed")
+        st.radio("Navigation", list(PAGES), key="nav",
+                 label_visibility="collapsed")
         st.divider()
         st.caption("Theme: use the ⋮ menu → Settings → Theme (light / dark).")
         st.caption(f"v{config.APP_VERSION} · local-first")
