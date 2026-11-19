@@ -18,6 +18,7 @@ noisereduce>=3.0,<4
 imageio-ffmpeg>=0.5.1,<1
 requests>=2.31,<3
 psutil>=5.9,<8
+six>=1.16.0,<2
 
 --extra-index-url https://download.pytorch.org/whl/cpu
 
