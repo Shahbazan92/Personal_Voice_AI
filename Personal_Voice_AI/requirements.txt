@@ -9,6 +9,21 @@
 
 
 
+# ---------------------------------------------------------------------------
+# Lightweight UI/app dependencies. This is the file Streamlit Community Cloud
+# installs. It does NOT include PyTorch / Coqui TTS (see requirements-xtts.txt),
+# because XTTS-v2 normally exceeds Community Cloud memory limits. On Cloud the
+# app uses the Remote GPU engine; locally you also install requirements-xtts.txt.
+# NOTE: version ranges below could not be install-tested by the author (no network
+# in the build sandbox). If pip reports a conflict, see README → Troubleshooting.
+# ---------------------------------------------------------------------------
+
+
+
+
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 streamlit>=1.40,<2
 
 numpy>=1.24,<3
@@ -21,15 +36,8 @@ requests>=2.31,<3
 psutil>=5.9,<8
 six>=1.16.0,<2
 
---index-url https://pypi.org/simple
---find-links https://download.pytorch.org/whl/cpu
-
 torch==2.9.0+cpu
 torchaudio==2.9.0+cpu
-
 coqui-tts[codec]==0.28.0
 
-torchaudio==2.9.0
-
-coqui-tts[codec]==0.28.0
 
