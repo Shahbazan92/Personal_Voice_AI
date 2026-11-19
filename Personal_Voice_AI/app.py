@@ -29,6 +29,18 @@ def main() -> None:
     services = get_services()
     settings = load_settings()
 
+      st.divider()
+    st.subheader("XTTS-v2 Test")
+
+    if st.button("Test XTTS Voice Generation"):
+        try:
+            with st.spinner("Generating speech..."):
+                # Replace this with your actual service/model call
+                st.info("XTTS test button is working. Model integration is next.")
+
+        except Exception as e:
+            st.error(f"Generation failed: {e}")
+
     with st.sidebar:
         logo = config.BASE_DIR / "assets" / "logo.png"
         if logo.is_file():
