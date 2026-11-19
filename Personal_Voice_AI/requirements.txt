@@ -6,6 +6,7 @@
 # NOTE: version ranges below could not be install-tested by the author (no network
 # in the build sandbox). If pip reports a conflict, see README → Troubleshooting.
 # ---------------------------------------------------------------------------
+pip install -r requirements-xtts.txt
 streamlit>=1.40,<2
 numpy>=1.24,<3
 scipy>=1.10,<2
