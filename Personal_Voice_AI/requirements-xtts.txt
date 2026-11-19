@@ -1,6 +1,9 @@
 # Local XTTS-v2 stack. Install PyTorch FIRST for your hardware (README step 4), then:
-  pip install -r requirements-xtts.txt
--r requirements.txt
+pip install -r requirements-xtts.txt
+pip install -r requirements.txt
+pip uninstall -y TTS coqui-tts trainer coqpit transformers
+pip install --upgrade pip
+pip install coqui-tts==0.28.0
 
 # torch/torchaudio are capped below 2.9: newer torchaudio versions load audio through
 # TorchCodec, which this stack has not been validated with.
