@@ -7,7 +7,9 @@
 # in the build sandbox). If pip reports a conflict, see README → Troubleshooting.
 # ---------------------------------------------------------------------------
 
+
 streamlit>=1.40,<2
+
 numpy>=1.24,<3
 scipy>=1.10,<2
 soundfile>=0.12.1,<0.14
@@ -17,7 +19,10 @@ imageio-ffmpeg>=0.5.1,<1
 requests>=2.31,<3
 psutil>=5.9,<8
 
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 torch==2.9.0
 torchaudio==2.9.0
 
 coqui-tts[codec]==0.28.0
+
