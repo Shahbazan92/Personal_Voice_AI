@@ -8,6 +8,7 @@
 # ---------------------------------------------------------------------------
 
 
+
 streamlit>=1.40,<2
 
 numpy>=1.24,<3
@@ -20,9 +21,14 @@ requests>=2.31,<3
 psutil>=5.9,<8
 six>=1.16.0,<2
 
---extra-index-url https://download.pytorch.org/whl/cpu
+--index-url https://pypi.org/simple
+--find-links https://download.pytorch.org/whl/cpu
 
-torch==2.9.0
+torch==2.9.0+cpu
+torchaudio==2.9.0+cpu
+
+coqui-tts[codec]==0.28.0
+
 torchaudio==2.9.0
 
 coqui-tts[codec]==0.28.0
